@@ -1,0 +1,154 @@
+/* Reset Css  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body  */
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+  background-color: whitesmoke;
+}
+
+form {
+  margin: auto;
+  background-color: rgb(228, 242, 255);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
+  padding: 20px;
+  max-width: 600px;
+}
+
+h1 {
+  text-align: center;
+  color: rgb(66, 66, 164);
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  border: 2px solid rgb(56, 72, 78);
+  border-radius: 10px;
+  padding: 23px;
+  margin-bottom: 20px;
+  background-color: aliceblue;
+}
+
+legend {
+  font-weight: bold;
+  text-align: left;
+  color: rgb(34, 29, 29);
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  color: block;
+}
+
+input {
+  margin-top: 4px;
+  padding: 8px;
+  width: 100%;
+  border: 1px solid rgb(66, 66, 164);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+textarea {
+  margin-top: 4px;
+  width: calc(100% - 1px);
+  border: 1px solid rgb(66, 66, 164);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+option {
+  width: 100%;
+  padding: 8px;
+}
+
+#result-display {
+  background-color: aliceblue;
+  text-align: center;
+  width: 50%;
+  margin-top: 50px;
+  margin-left: 320px;
+  border-radius: 10px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  outline: none;
+}
+
+button {
+  display: block;
+  width: 100%;
+  background-color: skyblue;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgb(0, 0, 0, 0.5);
+  margin-top: 10px;
+  font-size: 18px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  color: blue;
+}
+
+/* Media Queries for responsiveness */
+
+/* Devices with a width of 1200px or more (large screens, desktops) */
+@media screen and (min-width: 1200px) {
+  form {
+    max-width: 800px;
+  }
+  #result-display {
+    margin-left: 450px;
+  }
+}
+
+/* Devices with a width between 768px and 1199px (medium-sized screens, tablets, smaller desktops) */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  form {
+    max-width: 90%;
+  }
+  #result-display {
+    margin-left: 100px;
+    width: 70%;
+  }
+}
+
+/* Devices with a width between 480px and 767px (small screens, tablets in portrait mode) */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  form {
+    max-width: 95%;
+  }
+  #result-display {
+    width: 90%;
+    margin-left: 10px;
+  }
+}
+
+/* Devices with a width of 479px or less (mobile devices) */
+@media screen and (max-width: 479px) {
+  form {
+    max-width: 100%;
+    padding: 10px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  button {
+    font-size: 16px;
+    padding: 8px;
+  }
+  #result-display {
+    width: 100%;
+    margin-left: 0;
+  }
+}

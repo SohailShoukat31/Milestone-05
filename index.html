@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shareable Resume Builder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Shareable Resume Builder</h1>
+    <form action="" id="resume-form">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          placeholder="Enter your username"
+          required
+        />
+        <br />
+        <br />
+        <label for="name">Full name</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+        <br />
+        <br />
+        <label for="email">Email</label>
+
+        <input
+          type="email"
+          name=""
+          id="email"
+          placeholder="Enter Your Email"
+          required
+        />
+        <br />
+        <br />
+        <label for="phone">Phone</label>
+        <input
+          type="tel"
+          name=""
+          id="phone"
+          placeholder="Enter your phone Number"
+          required
+        />
+        <br />
+        <br />
+
+        <label for="dob">Date of Birth</label>
+        <input
+          type="date"
+          name=""
+          id="dob"
+          placeholder="Date of Birth"
+          required
+        />
+        <br />
+        <br />
+        <label for="gender">Gender</label>
+        <select name="" id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Education</legend>
+        <label for="education">Education : </label>
+        <select name="" id="education">
+          <option value="matric">Matric</option>
+          <option value="intermediate">Intermediate</option>
+          <option value="undergraduate">Undergraduate</option>
+          <option value="graduate">Graduate</option>
+          <option value="master">Masters</option>
+          <option value="phd">PHD</option>
+          <option value="others">Other</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Experience</legend>
+        <label for="experience">Experience : </label>
+        <textarea
+          name=""
+          id="experience"
+          placeholder="Enter your Experience"
+          rows="4"
+          required
+        >
+        </textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Skills</legend>
+        <label for="skills">Skills :</label>
+        <textarea
+          name=""
+          id="skills"
+          placeholder="Enter your Skills"
+          rows="4"
+          required
+        >
+        </textarea>
+      </fieldset>
+      <button type="submit">Generate Your Resume</button>
+    </form>
+    <!-- Dynamic and Editable Resume   -->
+    <div id="result-display" contenteditable="true">
+      <!-- Resume Generate -->
+    </div>
+    <br />
+    <!-- Shareable Link and download  -->
+    <div id="shareable-link-container" style="display: none">
+      <h2>Shareable link</h2>
+      <p>Here is Your Unique Link to view or edit resume:</p>
+      <a href="#" id="shareable-link" target="_blank"></a>
+      <br />
+      <button id="download">Download Card</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
